@@ -58,8 +58,9 @@ jobs:
 
     - run: |
          echo "Run, Build Application using script"
-         cd react-java-mysql
-         docker compose up -d
+         cd react-java-mysql/backend
+         mvn clean package
+    #     docker compose up -d
     #     docker build react-java-mysql/backend
     #     ./location_of_script_within_repo/buildscript.sh
 
