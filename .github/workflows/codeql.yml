@@ -58,7 +58,9 @@ jobs:
 
     - run: |
          echo "Run, Build Application using script"
-         docker build react-java-mysql/backend
+         cd react-java-mysql
+         docker compose up -d
+    #     docker build react-java-mysql/backend
     #     ./location_of_script_within_repo/buildscript.sh
 
     - name: Perform CodeQL Analysis
